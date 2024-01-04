@@ -9,8 +9,8 @@ export default function Navbar() {
     {text:"Blogs",href:"/blogs"},
   ]
   return (
-    <nav className="bg-[#fafafa] justify-between p-2 flex flex-row bg-blend-multiply items-center">
-        <Image src={'/static/logo2.jpg'} className="rounded-xl" alt='Plan it out' width={180} height={100}/>
+    <nav className="bg-[#fafafa] text-black opacity-50 hover:opacity-100 transition-all fixed w-full z-10 justify-between p-2 flex flex-row bg-blend-multiply items-center">
+        <Link href={'/'}><Image src={'/static/logo2.jpg'} className="rounded-xl" alt='Plan it out' width={180} height={100}/></Link>
         <div className="flex justify-around gap-5">
           {links.map(link=><Link key={link.text+link.href} className="hover:bg-slate-200 rounded p-2" href={link.href}>{link.text} ⮟</Link>)}
         </div>
