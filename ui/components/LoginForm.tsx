@@ -9,8 +9,12 @@ const LoginForm = () => {
       <input type="text" className='border border-slate-500 w-4/5 rounded-[5px] p-3 text-sm' placeholder="Enter your password" />
       <button className="bg-slate-500 mt-2 text-white w-fit p-2 rounded font-semibold px-4">Submit</button>
       <div className="flex gap-2">
-        <button><Image src={'https://pbs.twimg.com/profile_images/1605297940242669568/q8-vPggS_400x400.jpg'} alt="google" width={40} height={70} /></button>
-        <button><Image src={'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png'} alt="google" width={40} height={70} /></button>
+        <button>
+          <Image src={'https://pbs.twimg.com/profile_images/1605297940242669568/q8-vPggS_400x400.jpg'} alt="google" width={40} height={70} />
+        </button>
+        <button>
+          <Image src={'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png'} alt="google" width={40} height={70} />
+        </button>
       </div>
     </div>
   )
